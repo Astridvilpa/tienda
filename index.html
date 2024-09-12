@@ -1,15 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tienda</title>
-    <link rel="stylesheet" href="./style.css">
-</head>
-<body>
-    
-
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="menu container">
+        <a href="#" class="logo">logo</a>
+        <input type="checkbox" id="menu" />
+        <label for="menu">
+          <img src="img/menu.png" class="menu-icono" alt="menu" />
+        </label>
+        <nav class="navbar">
+          <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Servicios</a></li>
+            <li><a href="#">Productos</a></li>
+            <li><a href="#">Contacto</a></li>
+          </ul>
+        </nav>
+        <div>
+          <ul>
+            <li class="submenu">
+              <img src="img/car.svg" id="img-carrito" alt="carrito" />
+              <div id="carrito">
+                <table id="lista-carrito">
+                  <thead>
+                    <tr>
+                      <th>Imagen</th>
+                      <th>Nombre</th>
+                      <th>Precio</th>
+                      <th></th>
+                    </tr>
+                  </thead>
+                  <tbody></tbody>
+                </table>
+                <a href="#" id="vaciar-carrito" class="btn-2">Vaciar Carrito</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
 
     <script src="/main.js"></script>
-</body>
+  </body>
 </html>
